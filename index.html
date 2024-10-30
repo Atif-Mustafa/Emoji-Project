@@ -6,20 +6,29 @@
     <title>Document</title>
     <script src="emoji.js" defer></script>
     <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        
         <h1>Emojee - Emoji 🔍 Application</h1>
-        <hr>
-        <form action="">
+        <div class="navigation-bar">
+            <form action="">
+                <div id="buttons">
+                <input type="button" class="search_category" value="All">
+                <input type="button" class="search_category" value="Face">
+                <input type="button" class="search_category" value="Heart">
+                <input type="button" class="search_category" value="Book">
+                <input type="button" class="search_category" value="Hand">
+                <input type="button" class="search_category" value="Sports">
+                <input type="button" class="search_category" value="Flag">
+            </div>
                 <input type="text" id="search_field" placeholder="search emoji">
-        </form>
-        
-        <br>
-        <table>
-            <tbody id = "emoji_container"></tbody>
-        </table>
+            </form>
+        </div>
+    
+        <div id="emoji_container">
+
+        </div>
     </div>
 </body>
 </html>
